@@ -5,7 +5,6 @@
   "backlink",
   "canvas",
   "outgoing-link",
-  "tag-pane",
   "properties",
   "page-preview",
   "daily-notes",
@@ -14,9 +13,7 @@
   "command-palette",
   "editor-status",
   "bookmarks",
-  "markdown-importer",
   "outline",
   "word-count",
-  "audio-recorder",
   "file-recovery"
 ]

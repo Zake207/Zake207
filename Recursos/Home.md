@@ -1,18 +1,27 @@
 ---
 cssclasses: dashboard
-banner: "![[Pasted image 20240324175124.png]]"
-banner_y: 0.16
+banner: "![[depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp]]"
+banner_y: 0.03
 ---
 # Carrera
 
-- Asignaturas
+- 2 año
 ``` dataview
-list from "Carrera" and #índice 
+list from "Carrera" and #índice and #carrera_año2 
+```
+
++ 3 año
+``` dataview
+list from "Carrera" and #índice and #carrera_año3 
+```
++ 4 año
+``` dataview
+list from "Carrera" and #índice and #carrera_año4 
 ```
 + Recursos adicionales
 
 # Proyectos
-
++ [[Ideas]]
 
 # Libros
 ``` dataview
