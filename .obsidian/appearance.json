@@ -1,4 +1,11 @@
 {
   "accentColor": "#ff00dd",
-  "cssTheme": "Synthwave '84"
+  "cssTheme": "Synthwave '84",
+  "enabledCssSnippets": [
+    "dashboard",
+    "dashboard_wideview"
+  ],
+  "interfaceFontFamily": "Courier New",
+  "textFontFamily": "Courier New",
+  "monospaceFontFamily": "Courier New"
 }

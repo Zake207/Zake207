@@ -1,8 +1,10 @@
 {
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "Notas",
   "trashOption": "system",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./Anexos"
+  "attachmentFolderPath": "./Anexos",
+  "readableLineLength": true,
+  "propertiesInDocument": "hidden"
 }
