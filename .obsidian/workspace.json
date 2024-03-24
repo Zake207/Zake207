@@ -1,0 +1,149 @@
+{
+  "main": {
+    "id": "d5b6b99b2bc42dec",
+    "type": "split",
+    "children": [
+      {
+        "id": "b76e6eacb110801e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7334c5cdabb264d0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "50bf260b0caca71b",
+    "type": "split",
+    "children": [
+      {
+        "id": "98e9ab56f4f179a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f37c8b3f2f141f89",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9cf846f188421546",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c219deb02f122943",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2993c93774cc0969",
+    "type": "split",
+    "children": [
+      {
+        "id": "300eca23f4e2f8a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58c920782850ca8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "220149ba702389c7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b6c565d41d06186e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "70925cceb4ad8590",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "github-sync:Sync with Remote": false
+    }
+  },
+  "active": "f37c8b3f2f141f89",
+  "lastOpenFiles": [
+    "Notas",
+    "Carrera/AYEDA.",
+    "Libros",
+    "Carrera"
+  ]
+}
