@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b76e6eacb110801e",
+        "id": "9c848a5dcd3f8e22",
         "type": "tabs",
         "children": [
           {
-            "id": "7334c5cdabb264d0",
+            "id": "bbbc65c2a802a16d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4c4cadaf128559c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "hola..md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hola..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hola..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "hola..md"
-              }
+              "state": {}
             }
           }
         ]
@@ -151,19 +130,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
+      "switcher:Abrir selector rápido": false,
+      "canvas:Crear nuevo lienzo": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "github-sync:Sync with Remote": false
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "audio-recorder:Empezar/Parar de grabar": false
     }
   },
-  "active": "d4c4cadaf128559c",
+  "active": "bbbc65c2a802a16d",
   "lastOpenFiles": [
+    "Notas/24-03-2024.md",
     "README.md",
-    "hola..md",
+    "Notas/24/03/2024.md",
+    "Notas/h.md",
+    "Notas/24/03",
+    "Notas/24",
     "Notas",
     "Carrera/AYEDA.",
     "Libros",

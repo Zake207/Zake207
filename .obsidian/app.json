@@ -1,1 +1,8 @@
-{}
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notas",
+  "trashOption": "system",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./Anexos"
+}
