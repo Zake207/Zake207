@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "18e84cc7d6a69d37",
+        "id": "278386fb2b310763",
         "type": "tabs",
         "children": [
           {
-            "id": "649393f935b8e21e",
+            "id": "a2cdc20aacc90b2d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Proyectos/Ideas.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "690f5351a8edc74d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Proyectos/Ideas.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proyectos/Ideas.md",
+                "file": "Notas/Diario./24-03-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proyectos/Ideas.md",
+                "file": "Notas/Diario./24-03-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proyectos/Ideas.md"
+                "file": "Notas/Diario./24-03-2024.md"
               }
             }
           },
@@ -169,8 +152,16 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "f37c8b3f2f141f89",
+  "active": "52c487da35b5a591",
   "lastOpenFiles": [
+    "Proyectos/Ideas.md",
+    "Recursos/Home.md",
+    "Recursos/Templates/Plantilla Libros.md",
+    "Recursos/Templates/Índices.md",
+    "Libros/Fulgrim.md",
+    "Libros/En las montañas de la locura.md",
+    "Carrera/AYEDA/TEMA 1. C++.md",
+    "Carrera/AYEDA/AYEDA.md",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Tools.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/State.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/PositionDim.h",
@@ -181,26 +172,18 @@
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/FactoryCell.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/CellLife.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/CellACE.h",
-    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Cell.h",
-    "Recursos/Home.md",
-    "Proyectos/Ideas.md",
     "Carrera/Admin/Admin.md",
-    "Carrera/AYEDA/AYEDA.md",
     "Carrera/CDyAL/CDyAL.md",
     "Carrera/FIS/FIS.md",
     "Carrera/Sin título.md",
     "Recursos/Banner.md",
     "Recursos/Anexos/depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp",
     "Notas/Diario./24-03-2024.md",
-    "Libros/Fulgrim.md",
     "Notas/Eventos/2024-03-25 Cumple Sheila.md",
     "Notas/Eventos/2024-03-25 Prueba.md",
     "Recursos/Anexos/Pasted image 20240324175124.png",
     "Recursos/Anexos/harry-gillen-t7gbHudO1Xo-unsplash.jpg",
     "Recursos/Anexos/maxim-berg-kE8-rUKjtQU-unsplash.jpg",
-    "Recursos/Templates/Plantilla Libros.md",
-    "Recursos/Templates/Índices.md",
-    "Carrera/AYEDA/TEMA 1. C++.md",
     "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
     "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
     "Carrera/Redes/Redes.md",

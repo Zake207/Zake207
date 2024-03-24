@@ -1,9 +1,9 @@
 #libro
-##                                  Datos
+## Datos
 **Autor:** 
 **Fecha:** 
 **Estado:** 
 ## Resumen
 
-##                                   Citas
+## Citas
 
