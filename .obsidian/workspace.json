@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "278386fb2b310763",
+        "id": "ee5646e487a2d427",
         "type": "tabs",
         "children": [
           {
-            "id": "a2cdc20aacc90b2d",
+            "id": "333324a131b226a7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notas/Diario./24-03-2024.md",
+                "file": "Recursos/Banner.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notas/Diario./24-03-2024.md",
+                "file": "Recursos/Banner.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notas/Diario./24-03-2024.md"
+                "file": "Recursos/Banner.md"
               }
             }
           },
@@ -152,16 +156,36 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "52c487da35b5a591",
+  "active": "f37c8b3f2f141f89",
   "lastOpenFiles": [
-    "Proyectos/Ideas.md",
+    "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
+    "Notas/Eventos/2024-03-28 Recordar informe de admin.md",
+    "Notas/Eventos/2024-03-28 Beca.md",
+    "Notas/Eventos/2024-03-29 Beca.md",
+    "Notas/Eventos/2024-03-29 LaserTag.md",
+    "Notas/Eventos/2024-03-27 Beca.md",
+    "Notas/Eventos/2024-03-27 Avanzar PE de AYEDA.md",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326193945.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326192555.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326192512.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326170202.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326165938.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326164217.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326164140.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326163025.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326162339.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326161848.png",
+    "Carrera/AYEDA/Anexos",
+    "Carrera/AYEDA/AYEDA.md",
     "Recursos/Home.md",
+    "Notas/Diario./25-03-2024.md",
+    "Carrera/Redes/Redes.md",
+    "Libros/En las montañas de la locura.md",
+    "Proyectos/Ideas.md",
     "Recursos/Templates/Plantilla Libros.md",
     "Recursos/Templates/Índices.md",
     "Libros/Fulgrim.md",
-    "Libros/En las montañas de la locura.md",
     "Carrera/AYEDA/TEMA 1. C++.md",
-    "Carrera/AYEDA/AYEDA.md",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Tools.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/State.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/PositionDim.h",
@@ -171,28 +195,14 @@
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Lattice.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/FactoryCell.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/CellLife.h",
-    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/CellACE.h",
     "Carrera/Admin/Admin.md",
     "Carrera/CDyAL/CDyAL.md",
     "Carrera/FIS/FIS.md",
     "Carrera/Sin título.md",
     "Recursos/Banner.md",
-    "Recursos/Anexos/depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp",
     "Notas/Diario./24-03-2024.md",
     "Notas/Eventos/2024-03-25 Cumple Sheila.md",
     "Notas/Eventos/2024-03-25 Prueba.md",
-    "Recursos/Anexos/Pasted image 20240324175124.png",
-    "Recursos/Anexos/harry-gillen-t7gbHudO1Xo-unsplash.jpg",
-    "Recursos/Anexos/maxim-berg-kE8-rUKjtQU-unsplash.jpg",
-    "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
-    "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
-    "Carrera/Redes/Redes.md",
-    "Notas/25-03-2024.md",
-    "Notas/Eventos/2024-03-25 Celebración del cumple de sheila.md",
-    "pruebas.md",
-    "Carrera/AYEDA/Sin título.md",
-    "Notas/Sin título.md",
-    "README.md",
-    "Notas/24/03/2024.md"
+    "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md"
   ]
 }
