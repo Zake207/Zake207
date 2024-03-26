@@ -61,5 +61,22 @@ Una vez dividida se realiza el mismo método de manera recursiva sobre los dos s
 ![[Pasted image 20240326193945.png]]
 
 #### MergeSort
+Se descompone la secuencia a ordenar en dos, se ordenan y luego se mezclan ordenadamente. La división se realiza por la posición media y la mezcla se realiza seleccionando los elementos de menor clave de las subsecuencias.
+![[Pasted image 20240326195238.png]]
+![[Pasted image 20240326195304.png]]
+![[Pasted image 20240326195328.png]]
 
 ## Otros algoritmos.
+#### ShellSort.
+Consiste en ordenar por inserción los elementos de la secuencia que están a una distancia X, rebajando X hasta llegar a 1
+Ejemplo visual:
+![[Pasted image 20240326201025.png]]
+Se recomienda que los incrementos de X no sean múltiplos y que no tengan divisores comunes.
+En este caso se aplica la ordenación por inserción pero aquí se hace con el elemento que esté X posiciones más adelante.
+La mejor reducción de los incrementos es calcular X basándose en:
+					X = E((5X-1)/11)
+#### RadixSort.
+Este método consiste en ir ordenando los números según sus dígitos desde el último hasta el primero usando cubetas desde el 0 hasta el 9 para su ordenación
+#### TimSort.
+Está pensado para actuar con grandes cantidades de datos.
+Se hacen pasadas en las que se identifican subsecuencias de elementos ordenados ya sean crecientes o decrecientes, si es decreciente se invierte. Aquellas rachas que no tengan el tamaño mínimo se las amplia mediante el método de inserción. Las rachas ordenadas se almacenan en una pila de rachas para luego mezclarse ordenadamente, aumentando la eficacia de la mezcla si las rachas son de tamaño similar

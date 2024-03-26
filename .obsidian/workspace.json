@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recursos/Banner.md",
+                "file": "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recursos/Banner.md",
+                "file": "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recursos/Banner.md"
+                "file": "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md"
               }
             }
           },
@@ -156,8 +156,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "f37c8b3f2f141f89",
+  "active": "333324a131b226a7",
   "lastOpenFiles": [
+    "Carrera/AYEDA/Anexos/Pasted image 20240326201025.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326195328.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326195304.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240326195238.png",
+    "Recursos/Banner.md",
     "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
     "Notas/Eventos/2024-03-28 Recordar informe de admin.md",
     "Notas/Eventos/2024-03-28 Beca.md",
@@ -172,9 +177,6 @@
     "Carrera/AYEDA/Anexos/Pasted image 20240326165938.png",
     "Carrera/AYEDA/Anexos/Pasted image 20240326164217.png",
     "Carrera/AYEDA/Anexos/Pasted image 20240326164140.png",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326163025.png",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326162339.png",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326161848.png",
     "Carrera/AYEDA/Anexos",
     "Carrera/AYEDA/AYEDA.md",
     "Recursos/Home.md",
@@ -199,10 +201,8 @@
     "Carrera/CDyAL/CDyAL.md",
     "Carrera/FIS/FIS.md",
     "Carrera/Sin título.md",
-    "Recursos/Banner.md",
     "Notas/Diario./24-03-2024.md",
     "Notas/Eventos/2024-03-25 Cumple Sheila.md",
-    "Notas/Eventos/2024-03-25 Prueba.md",
-    "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md"
+    "Notas/Eventos/2024-03-25 Prueba.md"
   ]
 }
