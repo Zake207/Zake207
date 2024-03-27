@@ -49,8 +49,10 @@ El algoritmo de Floyd para HeapSort sigue las siguientes reglas:
 	- **En una primera fase**: se ordena la secuencia como un montón incorporando al montón los elementos uno a uno, bajándolo si hace falta.
 	- **En la segunda fase**: se va seleccionando iterativamente el elemento de mayor clave, que será siempre el que está en la raíz o primera posición, para  eliminarlo y bajar mientras haga falta el que ocupa su lugar.
 El algoritmo implementado:
+
 ![[Pasted image 20240326192512.png]]
 ![[Pasted image 20240326192555.png]]
+*(Revisar el código de la practica, ese es el correcto)*
 
 #### QuickSort
 Usa un pivote para descomponer la secuencia.
