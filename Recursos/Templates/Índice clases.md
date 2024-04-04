@@ -3,6 +3,5 @@ ___
 Teoría:
 
 Prácticas:
-[[Trabajo grupal 3]]
 
 ___

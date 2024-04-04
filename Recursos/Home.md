@@ -22,6 +22,10 @@ list from "Carrera" and #índice and #carrera_año4
 
 # Proyectos
 + [[Ideas]]
+# Ocio
+``` dataview
+list from "Ocio" and #índice
+```
 
 # Libros
 ``` dataview
