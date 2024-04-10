@@ -61,3 +61,19 @@ INICIALES:
 RECORRIDOS:
 INSERCIÓN:
 ELIMINACIÓN:
+## Árbol de búsqueda.
+Ordena los nodos del árbol dependiendo de la clave de estos, el sub-árbol izquierdo almacena nodos con clave inferior a la raíz y el sub-árbol derecho almacena nodos con clave superior. 
+A la hora de insertar se hace el procedimiento de búsqueda que encontrará el nulo en donde se deberá introducir el valor siguiendo el mismo criterio.
+
+## Árboles AVL
+Son árboles binarios de búsqueda que están balanceados
+En estos árboles el número de operaciones está acotado por la profundidad del árbol.
+
+Su recorrido en inorden da una secuencia de números ordenados.
+
+Un árbol esta balanceado si la diferencia de altura entre los dos sub- árboles no supera la unidad. El factor de balanceo de un nodo es igual a nº niveles a la izq - nº niveles a la der, en el momento en que se de un -2, el árbol no será balanceado
+
+A la hora de representarlos no se requiere el recorrido en inorden pues se sabe que los elementos menores que la raíz están a la izq y los mayores a la derecha.
+post-orden: 1 4 8 6 11 12 20 26 25 15 10
+10
+

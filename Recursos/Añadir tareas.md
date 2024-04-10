@@ -1,0 +1,4 @@
+- [ ] Pliego de CDyAL ⏫ 📅 2024-04-12
+- [ ] Informe de Redes 🔼 📅 2024-04-20
+- [ ] Práctica 6 de Ayeda 🛫 2024-04-12 📅 2024-04-18
+- [ ] Trabajo de Admin 🔺 🔁 every day 🛫 2024-04-10 📅 2024-04-15

@@ -2,7 +2,7 @@
   "globalQuery": "",
   "globalFilter": "",
   "removeGlobalFilter": false,
-  "taskFormat": "tasksPluginEmoji",
+  "taskFormat": "dataview",
   "setCreatedDate": false,
   "setDoneDate": true,
   "setCancelledDate": true,
@@ -11,7 +11,9 @@
   "autoSuggestMaxItems": 6,
   "provideAccessKeys": true,
   "useFilenameAsScheduledDate": false,
-  "filenameAsDateFolders": [],
+  "filenameAsDateFolders": [
+    "Tareas"
+  ],
   "recurrenceOnNextLine": false,
   "statusSettings": {
     "coreStatuses": [

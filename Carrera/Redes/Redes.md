@@ -1,11 +1,12 @@
 #índice #carrera_año2 
-#índice 
 ________________________________________________________________________
-Contenidos de la carpeta:
-+ Teoría
+Teoría
++ Tema 4
 [[Protocolos de enrutamiento]]
 [[Control de congestión]]
-+ Practicas.
++ Tema 5
+[[Capa de transporte]]
+Practicas.
 [[Practica 2.]]
 
 ________________________________________________________________________

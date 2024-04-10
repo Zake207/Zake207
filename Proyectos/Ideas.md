@@ -21,5 +21,4 @@
 #### Github:
 [Curso de MoureDev](https://www.youtube.com/watch?v=3GymExBkKjE&t=2526s)
 #### Obsidian.
-+ Lista de tareas en el homepage.
 + mini grafo de cada archivo para el panel derecho.

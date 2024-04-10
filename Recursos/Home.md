@@ -3,6 +3,12 @@ cssclasses: dashboard
 banner: "![[depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp]]"
 banner_y: 0.03
 ---
+# Tareas
+```dataview
+TASK
+WHERE !completed
+```
+[[Añadir tareas]]
 # Carrera
 
 - 2 año

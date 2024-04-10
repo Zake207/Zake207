@@ -42,3 +42,26 @@ Los permisos compartidos se establecen a nivel de carpeta y se aplica a todo su 
 ###### Permisos especiales
 Son permisos individuales para los archivos. Es mejor no asignarlos. La idea es tratar de "no permitir" antes que "denegar".
 
+#### Diseño Lógico.
++ Cada CD gestiona un único dominio. No se pueden borrar.
++ Tratar de tener un único dominio con varias Unidades Organizativas siempre que sea posible.
++ Saber la estructura de la organización. Establecer un criterio de nombres para la red.
++ Organizar la info interna y hacer las GPOs.
+
+Al pedir diseñar una organización hay que responder las siguientes cuestiones:
+###### nº de bosques 
+Un bosque por lo general, hay excepciones: unidades de la organización independientes o razones políticas. La más común es por la necesidad de tener esquemas(clases o atributos) diferentes.
+###### nº de dominios
+Un solo dominio salvo que: 
++ Se quiera dividir las tareas de administración.
++ Diferentes duración de los tickets de kerberos
++ Diferentes desvíos en la hora del sistema.
++ Para optimizar el sistema o comunicaciones Teniendo diferentes CD(controladores de dominio) para minizar el tráfico de baja replicación.
+El cómo organizarlos depende de los nombres otorgados a los dominios, siempre tratar de tener el menor número posible de dominios.
+###### Unidades organizativas
+Debe tener un diseño independiente en cada dominio.
+Se crean para tener una mejor delegación de control y poder organizar las GPO's. Son anidables aunque no se recomienda pasar de los 3 niveles de anidación.
+###### Grupos y permisos
+Se resuelve en la estructura física.
+#### Estructuras.
+![[Pasted image 20240409175224.png]]

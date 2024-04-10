@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "9a3c1f6bfc19bdaf",
+        "id": "74d0a2bc407c6c62",
         "type": "tabs",
         "children": [
           {
-            "id": "6cc0035c37a290d1",
+            "id": "d5ffa93ee9b24647",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Carrera/CDyAL/Trabajo grupal 3.md",
+                "file": "Recursos/Añadir tareas.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "205d1b5471c10297",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recursos/Home.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#indice",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2993c93774cc0969",
@@ -95,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Carrera/CDyAL/Trabajo grupal 3.md",
+                "file": "Recursos/Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Carrera/CDyAL/Trabajo grupal 3.md",
+                "file": "Recursos/Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Carrera/CDyAL/Trabajo grupal 3.md"
+                "file": "Recursos/Home.md"
               }
             }
           },
@@ -140,7 +153,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -158,26 +172,38 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "6cc0035c37a290d1",
+  "active": "205d1b5471c10297",
   "lastOpenFiles": [
-    "Carrera/CDyAL/CDyAL.md",
-    "Carrera/CDyAL/Trabajo grupal 3.md",
+    "Recursos/Añadir tareas.md",
     "Recursos/Home.md",
-    "Carrera/AYEDA/TEMA 4. ÁRBOLES.md",
-    "Notas/Diario./4-04-2024.md",
-    "Carrera/Redes/Control de congestión.md",
-    "Recursos/Templates/Índice clases.md",
-    "Recursos/Templates/Índice Carpeta.md",
+    "Carrera/Admin/Admin.md",
+    "Carrera/CDyAL/Trabajo grupal 3.md",
+    "Carrera/CDyAL/CDyAL.md",
+    "Carrera/Admin/Anexos/Pasted image 20240409175224.png",
+    "Notas/Diario./9-04-2024.md",
     "Carrera/AYEDA/AYEDA.md",
-    "Carrera/Redes/Anexos/Pasted image 20240404115115.png",
-    "Carrera/Redes/Anexos",
+    "Proyectos/Ideas.md",
+    "Tareas",
+    "Recursos/Templates/Índice clases.md",
+    "Ocio/Juegos.md",
+    "Ocio/No man's sky.md",
+    "Ocio/Corto plazo.md",
+    "Carrera/AYEDA/TEMA 4. ÁRBOLES.md",
+    "Recursos/gatete.md",
+    "Carrera/Redes/Capa de transporte.md",
     "Carrera/Redes/Redes.md",
+    "Carrera/Redes/Control de congestión.md",
+    "Carrera/Redes/Anexos/Pasted image 20240408111705.png",
+    "Carrera/Redes/Anexos/Pasted image 20240404115115.png",
+    "Ocio/Objetivos.md",
+    "Carrera/CDyAL/TEMA 3.md",
+    "Carrera/CDyAL/Anexos/Pasted image 20240405144719.png",
+    "Carrera/CDyAL/Anexos",
+    "Notas/Diario./4-04-2024.md",
+    "Recursos/Templates/Índice Carpeta.md",
+    "Carrera/Redes/Anexos",
     "Carrera/Redes/Protocolos de enrutamiento.md",
     "Carrera/Redes/Practica 2..md",
-    "Carrera/Admin/Admin.md",
-    "Ocio/Objetivos.md",
-    "Ocio/No man's sky.md",
-    "Ocio/Juegos.md",
     "Carrera/Admin/Anexos/Captura desde 2024-04-02 17-31-48.png",
     "Carrera/Admin/Apuntes. Windows.md",
     "Recursos/Anexos/Pasted image 20240324175124.png",
@@ -185,28 +211,15 @@
     "Recursos/Anexos/depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp",
     "Recursos/Anexos/harry-gillen-t7gbHudO1Xo-unsplash.jpg",
     "Recursos/Templates/Plantilla Libros.md",
-    "Recursos/Banner.md",
-    "README.md",
-    "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
     "Carrera/AYEDA/Anexos/Pasted image 20240326193945.png",
-    "Proyectos/Ideas.md",
     "Ocio",
-    "Carrera/Admin/Prácticas.md",
     "Carrera/Admin/grafo.canvas",
     "Carrera/Admin/Sin título.canvas",
-    "Carrera/Admin/Anexos/holu.png",
     "Carrera/Admin/Anexos",
-    "Notas/Diario./29-03-2024.md",
-    "Notas/Diario./28-03-2024.md",
-    "Notas/Diario./27-03-2024.md",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326201025.png",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326195328.png",
     "Carrera/AYEDA/Anexos",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Tools.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/State.h",
     "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/PositionDim.h",
-    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Position.h",
-    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Lattice2D.h",
-    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Lattice1D.h"
+    "Codigo personal/GameOfLifeProject/UnifiedGameOfLife/lib/Position.h"
   ]
 }

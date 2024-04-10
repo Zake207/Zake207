@@ -1,7 +1,6 @@
-#indice 
+#índice 
 ___
 Teoría:
 
 Prácticas:
-
 ___

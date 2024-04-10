@@ -20,3 +20,9 @@ GL_rw_prueba
 SL_rw_prueba
 
 Para añadir miembros seleccionamos miembros/agregar tras doble-clicar el grupo. Seleccionamos como ubicacion el dominio hijo. Luego en opciones avanzadas, buscar ahora y seleccionamos a Usuarios del dominio y a pepe.
+#### dia 3
+auto compartir se hace por directivas, a nivel de dominio y está en preferencias, a nivel de usuario.
+
+net use para compartir
+
+para los home se crea la carpeta y se le asigna al usuario en sus propedades/perfil
