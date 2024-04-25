@@ -71,9 +71,54 @@ En estos árboles el número de operaciones está acotado por la profundidad del
 
 Su recorrido en inorden da una secuencia de números ordenados.
 
-Un árbol esta balanceado si la diferencia de altura entre los dos sub- árboles no supera la unidad. El factor de balanceo de un nodo es igual a nº niveles a la izq - nº niveles a la der, en el momento en que se de un -2, el árbol no será balanceado
+Un árbol esta balanceado si la diferencia de altura entre los dos sub- árboles no supera la unidad. Se producen desbalanceos al insertar y eliminar hojas.
+
+El factor de balanceo de un nodo es igual a nº niveles a la izquierda - nº niveles a la derecha, en el momento en que se de un -2 o 2, el árbol no será balanceado. Es almacenado por cada nodo. Cabe destacar que el factor de balanceo de un nodo no debe ser usado para calcular el factor de su nodo padre.
 
 A la hora de representarlos no se requiere el recorrido en inorden pues se sabe que los elementos menores que la raíz están a la izq y los mayores a la derecha.
-post-orden: 1 4 8 6 11 12 20 26 25 15 10
-10
+### Casos de Desbalanceo
+En el siguiente árbol se sabe que b tiene al menos una rama con factor de balanceo p+1, pudiendo ser la izquierda, derecha o ambas:
+![[Pasted image 20240422132404.png]]
+### Casos simétricos
+Caso igual que el de desbalanceo pero en la rama izquierda de la raiz.
+![[Pasted image 20240422132456.png]]
 
+### Rebalanceos
+Al insertar un nodo aumenta el desbalanceo por aquellos nodos recorridos para insertar. Se presenta si aumenta la altura del sub-árbol por donde se va a insertar y este ya era más alto que el otro sub-árbol.
+Se llama:
++ n --> nodo donde se produce el desbalanceo
++ n' y n'' --> siguientes nodos en el recorrido de búsqueda
+Dependiendo de la disposición de estos 3 elementos se pueden dar 4 situaciones
+### Izquierda-Izquierda
+n' es el hijo izquierdo de n y n'' es el hijo izquierdo de n''.
+![[Pasted image 20240422141114.png]]
+### Derecha-Derecha
+n' es el hijo derecho de n y n'' es el hijo derecho de n'
+![[Pasted image 20240422141436.png]]
+### Izquierda-Derecha
+n' es el hijo izquierdo de n y n'' es el hijo derecho de n'
+![[Pasted image 20240422141451.png]]
+### Derecha-Izquierda
+n' es el hijo derecho de n y n'' es el hijo izquierdo de n'
+![[Pasted image 20240422141636.png]]
+### Eliminación
+Supone la desaparición de un nodo hoja o la de uno que tenga hijos y modifique la altura de la rama correspondiente. Para solucionar el desbalanceo correspondiente hay que aplicar las operaciones de balanceo de manera recursiva.
+
+Existen 2 tipos de eliminación:
+
+### Eliminación a la izquierda.
+Si decrece la altura del sub-árbol izquierdo de una rama.
+Si el factor de balanceo de la raiz pasa de -1 a -2 y se aplican los siguientes desbalanceos.
+![[Pasted image 20240422181611.png]]
+
+1) rotación DD 
+2) rotación DD
+3) rotación DI
+### Eliminación a la derecha
+Si decrece la altura del sub-árbol derecho de una rama.
+Si el balanceo de la raíz pasa de +1 a +2 y se produce uno de los siguientes desbalanceos:
+![[Pasted image 20240422182307.png]]
+
+1) rotación II 
+2) rotación II
+3) rotación ID

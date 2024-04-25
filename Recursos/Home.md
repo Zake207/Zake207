@@ -1,8 +1,10 @@
 ---
 cssclasses: dashboard
 banner: "![[depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp]]"
-banner_y: 0.03
+banner_y: 0
+banner_x: 0.5
 ---
+
 # Tareas
 ```dataview
 TASK
@@ -37,4 +39,3 @@ list from "Ocio" and #índice
 ``` dataview
 list from "Libros"
 ```
-

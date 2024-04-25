@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "74d0a2bc407c6c62",
+        "id": "ed4affdd689b8137",
         "type": "tabs",
         "children": [
           {
-            "id": "d5ffa93ee9b24647",
+            "id": "6333d10ecca18191",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recursos/Añadir tareas.md",
+                "file": "Carrera/Redes/Preguntas de examen.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,7 +21,33 @@
             }
           },
           {
-            "id": "205d1b5471c10297",
+            "id": "5901f298b9c09da8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/Admin/FreeIPA.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "145b98a262fd8431",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/AYEDA/TEMA 4. ÁRBOLES.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b877fb40baa899fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#indice",
+                "query": "tag:#carrera_año2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2993c93774cc0969",
@@ -108,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recursos/Home.md",
+                "file": "Carrera/Redes/Preguntas de examen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recursos/Home.md",
+                "file": "Carrera/Redes/Preguntas de examen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recursos/Home.md"
+                "file": "Carrera/Redes/Preguntas de examen.md"
               }
             }
           },
@@ -153,8 +179,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,49 +194,52 @@
       "canvas:Crear nuevo lienzo": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
+      "obsidian-book-search-plugin:Create new book note": false,
       "homepage:Open homepage": false
     }
   },
-  "active": "205d1b5471c10297",
+  "active": "6333d10ecca18191",
   "lastOpenFiles": [
-    "Recursos/Añadir tareas.md",
+    "Carrera/Admin/FreeIPA.md",
+    "Carrera/AYEDA/TEMA 4. ÁRBOLES.md",
     "Recursos/Home.md",
-    "Carrera/Admin/Admin.md",
-    "Carrera/CDyAL/Trabajo grupal 3.md",
-    "Carrera/CDyAL/CDyAL.md",
-    "Carrera/Admin/Anexos/Pasted image 20240409175224.png",
-    "Notas/Diario./9-04-2024.md",
+    "Recursos/Añadir tareas.md",
+    "Carrera/Admin/Windows.md",
+    "Carrera/Redes/Preguntas de examen.md",
     "Carrera/AYEDA/AYEDA.md",
-    "Proyectos/Ideas.md",
-    "Tareas",
-    "Recursos/Templates/Índice clases.md",
-    "Ocio/Juegos.md",
+    "Carrera/Admin/Anexos/Pasted image 20240424184415.png",
+    "Carrera/Admin/Anexos/Pasted image 20240424184135.png",
+    "Carrera/Admin/Administración de Sistemas.md",
+    "Carrera/Redes/Redes.md",
+    "Libros/En las montañas de la locura.md",
+    "Libros/Fulgrim.md",
+    "Libros/Fulgrim no 554.md",
+    "Carrera/Admin/Anexos/Pasted image 20240423172421.png",
+    "Carrera/CDyAL/Mapa Conceptual. Tema 4.canvas",
+    "Carrera/CDyAL/CDyAL.md",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422182307.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422181611.png",
+    "Carrera/Redes/Sistemas distribuidos.md",
+    "Carrera/Admin/Practica final.md",
+    "Carrera/Admin/Copias de seguridad.md",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422141636.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422141509.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422141451.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422141436.png",
+    "Carrera/AYEDA/Anexos/Pasted image 20240422141114.png",
+    "Carrera/AYEDA/Sin título.canvas",
+    "Ocio/Objetivos.md",
     "Ocio/No man's sky.md",
     "Ocio/Corto plazo.md",
-    "Carrera/AYEDA/TEMA 4. ÁRBOLES.md",
-    "Recursos/gatete.md",
+    "Ocio/Juegos.md",
     "Carrera/Redes/Capa de transporte.md",
-    "Carrera/Redes/Redes.md",
-    "Carrera/Redes/Control de congestión.md",
-    "Carrera/Redes/Anexos/Pasted image 20240408111705.png",
-    "Carrera/Redes/Anexos/Pasted image 20240404115115.png",
-    "Ocio/Objetivos.md",
-    "Carrera/CDyAL/TEMA 3.md",
-    "Carrera/CDyAL/Anexos/Pasted image 20240405144719.png",
+    "Recursos/Banner.md",
+    "Recursos/gatete.md",
+    "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
+    "Recursos/Untitled Kanban.md",
+    "Tareas",
     "Carrera/CDyAL/Anexos",
-    "Notas/Diario./4-04-2024.md",
-    "Recursos/Templates/Índice Carpeta.md",
     "Carrera/Redes/Anexos",
-    "Carrera/Redes/Protocolos de enrutamiento.md",
-    "Carrera/Redes/Practica 2..md",
-    "Carrera/Admin/Anexos/Captura desde 2024-04-02 17-31-48.png",
-    "Carrera/Admin/Apuntes. Windows.md",
-    "Recursos/Anexos/Pasted image 20240324175124.png",
-    "Recursos/Anexos/maxim-berg-kE8-rUKjtQU-unsplash.jpg",
-    "Recursos/Anexos/depositphotos_323952574-stock-illustration-synthwave-sunset-background-80s-sun.webp",
-    "Recursos/Anexos/harry-gillen-t7gbHudO1Xo-unsplash.jpg",
-    "Recursos/Templates/Plantilla Libros.md",
-    "Carrera/AYEDA/Anexos/Pasted image 20240326193945.png",
     "Ocio",
     "Carrera/Admin/grafo.canvas",
     "Carrera/Admin/Sin título.canvas",

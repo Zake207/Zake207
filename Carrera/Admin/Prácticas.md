@@ -26,3 +26,8 @@ auto compartir se hace por directivas, a nivel de dominio y está en preferencia
 net use para compartir
 
 para los home se crea la carpeta y se le asigna al usuario en sus propedades/perfil
+
+#### Dudas
+Como acceder con Escritorio remoto al hijo (directivas)
+Como montar las unidades de las carpetas
+Como hacer el escritorio remoto

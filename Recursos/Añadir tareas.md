@@ -1,4 +1,8 @@
-- [ ] Pliego de CDyAL ⏫ 📅 2024-04-12
-- [ ] Informe de Redes 🔼 📅 2024-04-20
-- [ ] Práctica 6 de Ayeda 🛫 2024-04-12 📅 2024-04-18
-- [ ] Trabajo de Admin 🔺 🔁 every day 🛫 2024-04-10 📅 2024-04-15
+- [x] Pliego de CDyAL 📅 2024-04-1
+- [x] Informe de Redes 📅 2024-04-20
+- [x] Práctica 6 de Ayeda 🛫 2024-04-12 📅 2024-04-18
+- [x] Trabajo de Admin 🛫 2024-04-10 📅 2024-04-15
+- [ ] Video de Admin 📅 2024-04-28
+- [x] Trabajo FIS ⏫ 📅 2024-04-19
+- [x] Examen de redes 📅 2024-04-22
+- [ ] Examen de admin📅 2024-05-07 ⏫

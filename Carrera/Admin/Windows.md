@@ -65,3 +65,55 @@ Se crean para tener una mejor delegación de control y poder organizar las GPO's
 Se resuelve en la estructura física.
 #### Estructuras.
 ![[Pasted image 20240409175224.png]]
+
+#### Diseño Físico
+Implementa la estructura lógica de la organización en la estructura física de red, este optimiza el tráfico en las lineas de baja velocidad.
+
+Este diseño permite crear grupos de directivas aunque no eliminan la replicación. También tiene el riesgo dar problemas de consistencia.
+La replicación sigue el modelo multimaster, pero hay algunas operaciones críticas que no se pueden realizar.
+
+Además hay cierta información que puede ser compartida por todos los controladores del árbol y otra que es compartida solo por los controladores del dominio
+
+Entre los diferentes sites se establecen enlaces, estos tienen un coste, que no es más que la representación de la velocidad y fiabilidad atribuido a los enlaces usado para calcular los caminos entre sites
+Se replican: Las modificaciones
+Como se replican: Intrasite, Infrasite
+###### Intersite
+El admin establece los sites.
+Por cada partición/base de datos establece un anillo
+Para diferentes sites se programa la hora de replicación y se replica la información entre los cabezas de puente
+###### Infrasite
+Son inmediatas y automáticas
+
+## Directivas de grupo
+Los parametros pueden tener 3 valores: Habilitado, deshabilitado y no configurado.
+
+## Aplicación de las GPO's
+Están asociadas a sitios, dominios o unidades organizativas.
+Permiten establecer directivas globales sobre esos contenedores.
+
+# DFS
+Consiste en crear una estructura de carpetas manejable y visible para los usuarios, la localización real de los archivos es invisible para los usuarios. Se instala añadiendo roles y características. Además los ficheros se pueden replicar si están enlazadas a la misma carpeta.
++ Basado en dominio: Acceso del tipo \\\\ull.es\\carpeta. No depende de un servidor
++ Basado en servidor: El acceso es contiene el nombre de la máquina en vez de el del dominio.
+La replicación permite crear réplicas de los datos para mejorar los accesos, solo se guardan los cambios más recientes.
+# Ejemplo: softlab
+
+Un bosque con un dominio.
+De este dominio se crea un site (plantabaja) a ese site se le añade la correspondiente GPO con la restricción dictada.
+
+Se crean los grupos globales de desarrollo y dirección
+GG_desarrollo
+GG_dirección
+
+Para poder imprimir en todas las impresoras de la empresa se debería crear un grupo local que al que se le dan los permisos
+
+Luego hay dos carpetas ficticias para la cual se crean dos grupos locales, uno que de control total, y otro de leer.
+
+Meto a los admins en el de impresora y lectura, a los desarrolladores solo se les mete en el de control total
+
+Para montar la unidad H que solo se le monte a los desarrolladores se debe crear una OU sobre la que se le aplique la GPO de asignación de unidades. Si no se hiciera la OU, aunque no se le permita entrar, se le montaría igualmente al resto.
+
+Hay que montar una DFS en el que se engloben las dos carpetas y montar la carpeta englobante en el dfs.
+
+Por otro lado el diseño físico
+Se crean 3 sites: Planta alta (CD1, DNS), plantas medias(CD1 y CD2, DNS), planta baja
