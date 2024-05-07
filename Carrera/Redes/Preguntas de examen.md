@@ -22,6 +22,8 @@ Para añadir entradas a la tabla se ejecuta lo siguiente:
 El problema es que al reiniciar la máquina esto se habrá borrado.
 
 También se puede editar el fichero /etc/network/interface y dar los datos para la ip y el gateway, una vez editado se debe ejecutar ifup eth0 para activar la interfaz, en este caso eth0
++ vi /etc/network/interface
++ ifup eth0
 
 ## Router
 Para poder editar el enrutamiento se debe ejecutar vtysh. Tras esto se debe ejecutar `configure terminal` para poder editar, siempre que se hagan cambios, fuera del modo edición se de debe ejecutar `write`

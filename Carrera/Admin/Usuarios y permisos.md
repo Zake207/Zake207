@@ -10,7 +10,7 @@ Los datos de los usuarios del sistema se almacenan en el fichero /etc/passwd y t
 *username:x:UID:GID:user-information:home-directory:login-shell*
 
 Este fichero es modificable y por ende inseguro para almacenar la contraseña de los usuarios, esta se almacena en el fichero /etc/shadow, que solo es accesible para root y usuarios que puedan hacerse pasar por este usuario.
-Cada registro de contraseña de grupo o usuario esta alamcenada con el siguiente formato:
+Cada registro de contraseña de grupo o usuario esta almacenada con el siguiente formato:
 
 username:encoded-password:changed:minlife:maxlife:warn:inactive:expires:unused
 
@@ -39,8 +39,8 @@ Existen diferentes tipos de permisos especiales que se les añade a los permisos
 
 |            | ficheros ejecutables                                                                                      | directorios                                                                                              |
 | ---------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| SetUID     | El fichero se ejecuta con los permisos del usuario que lo ejecuto sin tener en cuenta el propietario.     | -                                                                                                        |
-| SetGID     | El fichero se ejecuta con los permisos del grupo que lo ejecuto sin tener en cuenta el grupo propietario. | Los ficheros creados dentro del directorio tendrán como propietario el grupo propietario del directorio. |
+| SetUID     | El fichero se ejecuta con los permisos del propietario sin tener en cuenta el que lo ejecutó.             | -                                                                                                        |
+| SetGID     | El fichero se ejecuta con los permisos del grupo propietario sin tener en cuenta el grupo que lo ejecutó. | Los ficheros creados dentro del directorio tendrán como propietario el grupo propietario del directorio. |
 | Sticky-bit | -                                                                                                         | Los archivos dentro del directorio solo podrán ser borrados por el propietario                           |
 # Máscaras
 Un usuario tiene una máscara que determina los permisos por defecto que tendrán los ficheros y directorios que cree. Está puede ser cambiada por el propio usuario con el comando umask, o por el root en el fichero /etc/profile
@@ -58,7 +58,7 @@ Para saber que permisos son esos se puede consultar la siguiente tabla:
 Una ACL se crea para dar a los ficheros y directorios permisos para casos específicos de usuarios o grupos.
 Estos permisos conviven con los permisos tradicionales de Linux.
 
-Si una ACL esta marcada como `default` esos permisos solo se aplicarán sobre los ficheros y carpetas que estén contenidos en el directorio, si fueran una lista de control de acceso por defecto en un fichero, esta no tendría ningún efecto.
+Si una ACL esta marcada como `default` esos permisos solo se aplicarán sobre los ficheros y carpetas que estén contenidos en el directorio, si fueran una lista de control de acceso por defecto en un fichero, esta no tendría ningún efecto, pues default solo afecta a ACL de directorios.
 
 El orden en el que se comprueban los permisos normales y los de las listas de control de acceso es el siguiente:
 + Comprobar que es el propietario

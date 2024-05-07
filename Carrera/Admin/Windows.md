@@ -1,14 +1,41 @@
-#### Perfiles.
+# Dominios.
+Agrupación lógica de ordenadores, usuarios y otros recursos, es manejado por un administrador e incluye como mínimo un controlador de dominio (DC)
+
+Un bosque es una agrupación jerárquica de árboles, y un árbol es una distribución jerárquica de varios servidores. Los árboles comparten un schema y un catálogo global, además de administradores y configuración de confianza compartida.
+
+El catálogo global es un almacén de información, guarda aquellos atributos relacionados con el bosque. Es la info que más frecuentemente se usa en consultas.
+
+Existen unidades organizativas que son contenedores que permiten agrupar objetos de un dominio, permiten delegar el control administrativo de forma controlada.
+
+# Usuarios.
+Se les asigna dos números de identificación:
++ Número de identificador global GUID
++ Número de identificador de seguridad SID
++ User Principal Name UPN
+
+Tipos de cuenta de usuario:
++ Cuenta de usuario local: El usuario entra a un ordenador específico y esta reside en SAM
++ Cuenta del usuario del dominio: Permite acceder a cualquier ordenador de la red del dominio al que pertenece.
++ Cuenta de usuario predefinido: Permite hacer tareas administrativas (admin o invitado) y se crean automáticamente.
+
+Se debe tener una política de contraseñas
+La situación de los directorios puede ser:
++ Descentralizada
++ Centralizada
+
+## Perfiles
+Estructura predeterminada de carpetas y datos de registro.
+Cada usuario requiere de uno.
 + Perfil por defecto: la base para el resto.
 + Perfil Local: Se crea la primera vez que el usuario entra en el ordenador.
 + Perfil Flotante: Se crea por el administrador y se almacena en un servidor, estando disponible desde cualquier ordenador de la red.
 + Perfil Obligatorio: Creado para especificar una configuración particular de los usuarios, pudiendo ser local o flotante.
-#### Grupos.
-Colección de cuentas de usuario y permiten simplificar el acceso a los recursos.
-###### Tipos:
+# Grupos.
+Colección de cuentas de usuario y permiten simplificar el acceso a los recursos. Son anidables.
+### Tipos:
 **Grupos de seguridad:** Usados para cualquier asunto relacionado con el tópico.
 **Grupo de distribución:** Usados para el resto de asuntos.
-###### Ámbitos:
+### Ámbitos:
 Determinan dónde se puede utilizar dicho grupo.
 + Global del dominio: Son visibles para el resto de dominios del bosque pero sólo puede contener miembros y grupos anidados del mismo dominio que el grupo.
 + Local del dominio: Solo es visible en el dominio donde se define, pero puede contener usuarios y grupos globales anidados de cualquier otro dominio.
@@ -16,7 +43,7 @@ Determinan dónde se puede utilizar dicho grupo.
 ###### Recomendaciones:
 ![[Captura desde 2024-04-02 17-31-48.png]]
 + No usar universales
-+ Meter un usuario en un grupo global, al recurso darle permisos en un grupo local y luego metemos e grupo global en el grupo local.
++ Meter un usuario en un grupo global, al recurso darle permisos en un grupo local y luego metemos el grupo global en el grupo local.
 #### Distribución de información
 Distribuido
 Centralizado
@@ -24,96 +51,123 @@ Centralizado
 La info se guarda en diferentes formatos FAT, FAT32, extFAT, NFTS.
 
 Se puede acceder a la información de manera local o de manera remota
-### Control de accesos
-###### **Permisos NTFS**
-A nivel de sistema de archivos.
-Almacena una lista de control de acceso, cuando a un recurso intenta entrar un usuario que no tiene entrada en esta lista se le deniega el permiso. El permiso denegar prevalece sobre el resto. Los permisos son acumulativos y en caso de que haya varias coincidencias los permisos son la suma.
+## Control de accesos
+### **Permisos NTFS**
+A nivel del sistema de archivos.
+Almacena una lista de control de acceso, cuando a un recurso intenta entrar un usuario que no tiene entrada en esta lista se le deniega el permiso. El permiso denegar prevalece sobre el resto. Los permisos son acumulativos y en caso de que haya varias coincidencias los permisos son la suma de estos.
 
-Los permisos son heredados y propagados, se puede evitar esta herencia y primera carpeta después de esta herencia se convierte en padre de las descendientes de esta.
-Hay dos opciones para eliminar la herencia: Copiar y borrar.
+Los permisos son heredados y propagados, se puede evitar esta herencia y la primera carpeta después de esta herencia se convierte en padre de las descendientes de esta.
+Hay dos opciones para eliminar la herencia: 
++ Copiar los permisos del directorio padre 
++ Borrar los anteriores y dejar solo los que son explícitos de el objeto.
 
-
-###### **Permisos compartidos**
+### **Permisos compartidos**
 Solo se aplican cuando se accede por la red. Utiliza una ruta universal para acceder a la carpeta compartida: \\\\desktop.elderring.com\\dinerito
-El recurso compartido tiene un nombre que se le asigna para ser compartido, en este caso es *dinerito* 
+El recurso compartido tiene un nombre que se le asigna para ser compartido, en este caso es *dinerito*.
 
-Los permisos compartidos se establecen a nivel de carpeta y se aplica a todo su contenido, suele ser el menos restrictivo para que los NFTS controlen los permisos de mejor manera.
+Los permisos compartidos se establecen a nivel de carpeta y se aplica a todo su contenido, suele ser el menos restrictivo para que los NTFS controlen los permisos de mejor manera.
 
-###### Permisos especiales
+### Permisos especiales
 Son permisos individuales para los archivos. Es mejor no asignarlos. La idea es tratar de "no permitir" antes que "denegar".
 
-#### Diseño Lógico.
-+ Cada CD gestiona un único dominio. No se pueden borrar.
+# Diseño Lógico.
++ Cada DC gestiona un único dominio. No se pueden borrar.
 + Tratar de tener un único dominio con varias Unidades Organizativas siempre que sea posible.
 + Saber la estructura de la organización. Establecer un criterio de nombres para la red.
 + Organizar la info interna y hacer las GPOs.
 
 Al pedir diseñar una organización hay que responder las siguientes cuestiones:
-###### nº de bosques 
-Un bosque por lo general, hay excepciones: unidades de la organización independientes o razones políticas. La más común es por la necesidad de tener esquemas(clases o atributos) diferentes.
-###### nº de dominios
+## nº de bosques 
+Un bosque por lo general, hay excepciones: 
++ Unidades de la organización independientes 
++ Razones políticas 
++ La más común es por la necesidad de tener esquemas(clases o atributos) diferentes.
+## nº de dominios
 Un solo dominio salvo que: 
 + Se quiera dividir las tareas de administración.
 + Diferentes duración de los tickets de kerberos
 + Diferentes desvíos en la hora del sistema.
-+ Para optimizar el sistema o comunicaciones Teniendo diferentes CD(controladores de dominio) para minizar el tráfico de baja replicación.
++ Para optimizar el sistema o comunicaciones teniendo diferentes DC's(controladores de dominio) para minizar el tráfico de baja replicación.
 El cómo organizarlos depende de los nombres otorgados a los dominios, siempre tratar de tener el menor número posible de dominios.
-###### Unidades organizativas
+
+El dominio raiz del bosque puede ser uno vacío en el que se aísle a los administradores de la empresa o ser un dominio que perdure y tenga una función.
+## Unidades organizativas
 Debe tener un diseño independiente en cada dominio.
 Se crean para tener una mejor delegación de control y poder organizar las GPO's. Son anidables aunque no se recomienda pasar de los 3 niveles de anidación.
+
+La delegación de control permite asignar ciertas tareas de administrador a un usuario sobre un conjunto de objetos.
 ###### Grupos y permisos
 Se resuelve en la estructura física.
 #### Estructuras.
 ![[Pasted image 20240409175224.png]]
 
-#### Diseño Físico
-Implementa la estructura lógica de la organización en la estructura física de red, este optimiza el tráfico en las lineas de baja velocidad.
+# Diseño Físico.
+Permite configurar el tráfico de red. Involucra los sites y la replicación.
+## Sites.
+Proporcionan una conexión entre la infraestructura física y la lógica.
+Son un área de red donde los equipos se conectan de manera rápida fiable y barata.
++ Un site puede tener varios dominios
++ Un dominio puede distribuirse entre varios sites.
+A los sites se les pueden asignar GPOs y estos mejoran la eficiencia.
 
-Este diseño permite crear grupos de directivas aunque no eliminan la replicación. También tiene el riesgo dar problemas de consistencia.
-La replicación sigue el modelo multimaster, pero hay algunas operaciones críticas que no se pueden realizar.
+Es recomendable tener DC redundantes para así tener mayor tolerancia a fallos, mejor balanceo de carga y proximidad de la información.
 
-Además hay cierta información que puede ser compartida por todos los controladores del árbol y otra que es compartida solo por los controladores del dominio
+La replicación permite tener la información de un dominio actualizada y disponible desde otro dominio desde el cual acceder. Sigue el modelo multimaster. Algunas réplicas se aplican de forma inmediata.
 
-Entre los diferentes sites se establecen enlaces, estos tienen un coste, que no es más que la representación de la velocidad y fiabilidad atribuido a los enlaces usado para calcular los caminos entre sites
-Se replican: Las modificaciones
-Como se replican: Intrasite, Infrasite
-###### Intersite
-El admin establece los sites.
-Por cada partición/base de datos establece un anillo
-Para diferentes sites se programa la hora de replicación y se replica la información entre los cabezas de puente
-###### Infrasite
-Son inmediatas y automáticas
+Las replicaciones se aplican sobre particiones de Active Directory.
+![[Pasted image 20240430112429.png]]
 
-## Directivas de grupo
-Los parametros pueden tener 3 valores: Habilitado, deshabilitado y no configurado.
+### Intrasite
+Los CD se sincronizan en el menor tiempo posible. 
+Usa una topología de anillo, cuando un DC modifica la base de datos avisa al resto para que inicien el proceso de replicación.
 
-## Aplicación de las GPO's
-Están asociadas a sitios, dominios o unidades organizativas.
-Permiten establecer directivas globales sobre esos contenedores.
+### Intersite
+Reduce el ancho de banda usado. 
+Atiende a una planificación, los datos a replicar se comprimen. 
+La replicación se realiza a través de los servidores cabeza de puente.
+La planificación de esta dicta las horas en las que se llevará a cabo.
 
+Los sites están unidos por enlaces que tienen asociado un número que representa el costo de atravesarlo, la replicación se lleva a cabo a través del enlace con menor coste. 
+# Directivas de grupo
+Se aplican sobre sitios, dominios o Unidades organizativas y afectan a los usuarios y ordenadores.
+Pueden estar:
++ Habilitado
++ Deshabilitado
++ No configurado
+
+Se pueden aplicar varias GPO's a un contenedor, o un GPO a varios contenedores.
+En una directiva sobre ordenadores y usuarios tienen preferencia la primera
+Se aplican:
+1. Site
+2. Dominio
+3. Unidades organizativas
+
+Las GPO's se heredan, se aplican primero las del padre y después las del hijo, en caso de colisión prevalece la del padre.
+## Gestión de GPO's
++ **Bloqueo de herencia:** El contenedor hijo no hereda las GPO's del padre que no estén forzadas.
++ **Forzar herencia:** Fuerza la aplicación de las GPO's, sobrescribiendo las GPO's de arriba si estas no están forzadas.
++ **Filtrar configuración de GPO:** Permite filtrar la directiva a determinados elementos del contenedor.
++ **Cambio de orden de procesamiento:** En el caso de que las múltples GPO's que están asociadas a un contenedor se contradigan, prevalecerá la que esté más alto en el listado de GPO's.
+## Administración
+#### Modificar las directivas existentes
+Tener permisos de lectura y escritura sobre la GPO.
+#### Creación de nuevas GPO's
+Solo pueden Propietarios Creadores de Directivas de grupo, Sistema, Administradores de Dominio y Administradores de Empresa.
+
+Se debe añadir a los usuarios a Propietarios Creadores de Directivas de Grupo.
+#### Vinculación/Desvinculación de GPO a contenedor
+Se puede usar "Delegar control" para permitir a los usuarios el "Administrar la directiva de grupo"
+## Ejemplo.
+![[Pasted image 20240430153521.png]]
 # DFS
-Consiste en crear una estructura de carpetas manejable y visible para los usuarios, la localización real de los archivos es invisible para los usuarios. Se instala añadiendo roles y características. Además los ficheros se pueden replicar si están enlazadas a la misma carpeta.
-+ Basado en dominio: Acceso del tipo \\\\ull.es\\carpeta. No depende de un servidor
-+ Basado en servidor: El acceso es contiene el nombre de la máquina en vez de el del dominio.
-La replicación permite crear réplicas de los datos para mejorar los accesos, solo se guardan los cambios más recientes.
-# Ejemplo: softlab
+Mejora el uso de carpetas compartidas, permite su organización y reparto.
+Tiene un espacio de nombres y permite replicación.
 
-Un bosque con un dominio.
-De este dominio se crea un site (plantabaja) a ese site se le añade la correspondiente GPO con la restricción dictada.
+Su espacio de nombres puede ser 
++ Autónomo pues la configuración se guarda en el servidor DFS 
++ Basado en dominio, lo que permite redundancia en los enlaces, así no se limita el acceso al recurso a una sola máquina (no depende de un servidor)
 
-Se crean los grupos globales de desarrollo y dirección
-GG_desarrollo
-GG_dirección
+Para acceder al recurso se usa un *referral* la cual es una lista ordenada de servidores a los cuales entra para acceder al recurso, siempre siguiendo el orden de la lista.
 
-Para poder imprimir en todas las impresoras de la empresa se debería crear un grupo local que al que se le dan los permisos
+La replicación DFS permite replicar carpeta entre servidores, usa la red de forma eficiente pues permite planificarla y solo propaga los cambios. Sin embargo cuenta con limitaciones de espacio.
 
-Luego hay dos carpetas ficticias para la cual se crean dos grupos locales, uno que de control total, y otro de leer.
-
-Meto a los admins en el de impresora y lectura, a los desarrolladores solo se les mete en el de control total
-
-Para montar la unidad H que solo se le monte a los desarrolladores se debe crear una OU sobre la que se le aplique la GPO de asignación de unidades. Si no se hiciera la OU, aunque no se le permita entrar, se le montaría igualmente al resto.
-
-Hay que montar una DFS en el que se engloben las dos carpetas y montar la carpeta englobante en el dfs.
-
-Por otro lado el diseño físico
-Se crean 3 sites: Planta alta (CD1, DNS), plantas medias(CD1 y CD2, DNS), planta baja

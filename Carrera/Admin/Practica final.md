@@ -14,3 +14,9 @@ Otra acción posible es habilitar a un usuario para modificar las opciones de la
 Una recomendación es crear varias directivas con nombres que especifiquen su uso.
 
 El dfs centraliza todo para ocultar la ubicación real de los archivos al usuario, este sistema crea una estructura de carpetas ficticias que ayuda al usuario a organizar los archivos.
+
+Poner el fondo, para exigir o forzar botón derecho.
+en redes y admin bloquean herencia
+redes: se ponga el fondo
+publi: no icon red y fondo
+admin: tener icon red, no music y fondo
