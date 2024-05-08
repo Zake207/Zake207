@@ -1,6 +1,6 @@
 #índice 
 ___
-Teoría:
+### Teoría:
 
-Prácticas:
+### Prácticas:
 ___

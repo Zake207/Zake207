@@ -5,20 +5,17 @@ CODEC: Recibe una señal que codifica y envía como señal digital a un decodifi
 MODEM: AL recibir una señal la pasa por un modulador, este produce una señal analógica que luego le pasa a un demodulador, produciendo una señal recuperada.
 
 La codificación se ve afectada por:
-
 - Velocidad de transmisión
 - Relación señal-ruido
 - Ancho de banda
 - Esquema de codificación
 
 Una secuencia digital es una secuencia de pulsos que codifican datos binarios. Usan esquemas de codificación:  
-![Pasted image 20240502181000.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502181000.png?1714669800768)
+![[Pasted image 20240502181000.png]]
 
 La velocidad de modulación es la cantidad de elementos de señal por unidad de tiempo.
 
-# 
-
-Medios físicos
+# Medios físicos
 
 Existe entre cada par transmisor-receptor.  
 Pueden o no ser guiados.
@@ -31,26 +28,24 @@ Cables de par trenzado:
 
 Los pares trenzados tienen categorías (1, 3, 4, 5 y 5e), cada una con más ancho de banda que el anterior.
 
-El cable coaxial tienen dos conductores concéntricos, el central es el vivo y el externo es la malla, referencia a tierra  
-![Pasted image 20240502182600.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502182600.png?1714670760673)
+El cable coaxial tienen dos conductores concéntricos, el central es el vivo y el externo es la malla, referencia a tierra.
+![[Pasted image 20240502182600.png]]
 
 La fibra óptica es inmune a las interferencias electromagnéticas.
 
 Los enlaces de radio son un medio no guiado y puede ser interceptado por cualquiera al alcance.
 
-# 
-
-Transmisión
+# Transmisión
 
 - Señal analógica: La intensidad varía suavemente
 - Señal digital: La intensidad cambia de una constante a otra tras un tiempo.
 - Señal periódica: Consiste en un patrón que se repite con el tiempo.
 
-Las señales se pueden expresar en dominio de frecuencia o temporal.  
-![Pasted image 20240502183545.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502183545.png?1714671345467)![Pasted image 20240502183613.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502183613.png?1714671373259)
+Las señales se pueden expresar en dominio de frecuencia o temporal.
+![[Pasted image 20240502183545.png]]![[Pasted image 20240502183613.png]]
 
-**La formula para describir la onda es la siguiente**  
-  
+**La formula para describir la onda es la siguiente**
+![[Pasted image 20240507211905.png]]
 siendo:
 
 - A: amplitud
@@ -72,11 +67,12 @@ La capacidad de transmisión es la capacidad máxima a la que se puede transmiti
 
 La velocidad de transmisión esta limitado por el ancho de banda.  
 La capacidad viene dada por:  
+![[Pasted image 20240507212331.png]]
   
 donde B son las frecuencias y M la cantidad de niveles.
 
 La fórmula de Shannon establece la relación entre la velocidad el ruido y los errores  
-![Pasted image 20240502190247.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502190247.png?1714672967951)
+![[Pasted image 20240502190247.png]]
 
 Esta relación condiciona la capacidad de señales digitales.  
-![Pasted image 20240502190325.png](app://f4a00089daa2eadfdd2a745beb388c1feb50/home/alu0101546377/Escritorio/Zake207/Carrera/Redes/Anexos/Pasted%20image%2020240502190325.png?1714673005712)
+![[Pasted image 20240502190325.png]]

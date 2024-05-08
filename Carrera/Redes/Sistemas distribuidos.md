@@ -6,9 +6,14 @@ Para direccionar procesos se debe conocer la dirección del host y del proceso (
 La organización IANA se encarga de gestionar los nombres de dominios, recursos y asignaciones de protocolos
 
 Se utiliza una caché web para ahorrar tiempo de conexión, para ello se usan los servidores proxy como almacenamiento intermedio.
-
 HTTP no cuenta con memoria de conexión, para que puedan tener esto se usan las cookies.
-Al hacer una petición se abre una conexión con el puerto 80 del servidor, el cliente envía un mensaje GET y el servidor envía un HTTP response con el recurso, este cierra conexión, el cliente recibe la respuesta y la conexión termina. Se suelen enviar GET condicionales para comprobar si el recurso está actualizado.
+
+Al hacer una petición se abre una conexión con el puerto 80 del servidor, 
+1. el cliente envía un mensaje GET 
+2. el servidor envía un HTTP response con el recurso 
+3. este cierra conexión, el cliente recibe la respuesta y la conexión termina. 
+
+Se suelen enviar GET condicionales para comprobar si el recurso está actualizado.
 
 DNS Es una base de datos distribuida que traduce las direcciones IP en nombres legibles. Un host puede tener diferentes alias y un alias puede pertenecer a diferentes hosts. Hay 3 tipos de servidores:
 + Servidor raiz
@@ -24,7 +29,7 @@ Si se hiciera de forma iterativa el servidor local sería el encargado de hacer 
 Los servidores DNS guardan diferentes tipos de registros (A, NS, CNAME, MX)
 
 DHCP
-El cliente envía un DHCP discover a la dirección broadcast, este llega al servidor que tiene un pool de direcciones a asignar, le manda  un DHCP offer al broadcast de nuevo ofreciendole una ip al cliente nuevo, tras comprobar esta el cliente le solicita esta dirección con un DHCP request al servidor, la dirección se retira del pool del servidor DHCP y le envía un DHCP ACK al cliente 
+El cliente envía un DHCP discover a la dirección broadcast, este llega al servidor que tiene un pool de direcciones a asignar, le manda  un DHCP offer al broadcast de nuevo ofreciéndole una ip al cliente nuevo, tras comprobar esta el cliente le solicita esta dirección con un DHCP request al servidor, la dirección se retira del pool del servidor DHCP y le envía un DHCP ACK al cliente.
 
 El servidor DHCP se puede colocar en el router que da al exterior y mediante DHCP relay se le hace la consulta al servidor DHCP centralizado fuera de la red.
 

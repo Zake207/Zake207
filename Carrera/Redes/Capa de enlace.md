@@ -6,14 +6,14 @@ Lleva a cabo funciones como el entramado, control de flujo, corrección de error
 + La capa de enlace es implementada en el adaptador de red.
 
 Para llevar a cabo la detección de errores se ejecuta la comprobación de paridad. En la sucesión de números binarios que es el paquete se le añade un bit de paridad.
-+ Paridad par: el bit se activa si el número de "1" en la secuencia más el de paridad debe ser par. 
-+ Paridad impar: el bit se activa si en número de "1" en la secuencia más el bit de paridad debe ser impar.
++ Paridad par: el bit se activa si el número de "1" en la secuencia es impar. 
++ Paridad impar: el bit se activa si en número de "1" en la secuencia es par.
 
 Las comprobaciones de paridad multi-dimensionales dividen la secuencia en filas y columnas para comprobar por filas y columnas la paridad y así encontrar antes el error.
 
 Las sumas de comprobación tratan los bits como unas secuencias de enteros de k bits, que suma, el resultado es usado para detectar errores.
 
-En la redundancia cíclica el emisor y receptor están de acuerdo en un patrón de r+1 bits (G) el más significativo de este debe ser "1". Para una secuencia de datos el emisor añade r bits adicionales para que los bits resultantes sean divisibles por G.
+En la redundancia cíclica el emisor y receptor están de acuerdo en un patrón de r+1 bits (G) el más significativo de este debe ser "1". Para una secuencia de datos, el emisor añade r bits adicionales para que los bits resultantes sean divisibles por G.
 ==REVISAR EJEMPLO DE CLASE==
 
 + Enlace punto a punto.
@@ -52,14 +52,14 @@ Se limita la distancia máxima entre nodos y se establece un tamaño mínimo.
 Depende de la velocidad que tarda la señal en propagarse y el tiempo necesario para transmitir una trama (d_pro y d_trans).
 ![[Pasted image 20240503173432.png]]
 ## Switches
-Las LAN modernas usan topología de estrella, en la que los nodos están conectados a un conmutador central que recibe tramas a niveld e enlace y las reenvia.
+Las LAN modernas usan topología de estrella, en la que los nodos están conectados a un conmutador central que recibe tramas a nivel de enlace y las reenvia.
 Los switches son invisibles para los nodos.
 + Determinan si una trama se descarta o reenvia
 + Determinan las interfaces a las que debe dirigirse la trama.
 Para poder filtrar usa una tabla de conmutación con:
 + La dirección MAC destino
 + El gateway
-+ El instante en el que se incluyo la entrada.
++ El instante en el que se incluyó la entrada.
 Revisa la tabla, inundando las salidas si no tiene entrada. Si tiene entrada pero el gateway es el mismo que de donde vino descarta la trama. Si no se cumple ningún caso se reenvía la trama.
 
 La tabla comienza vacía, se va actualizando añadiendo entradas que no tenga y borrando las que llevan un tiempo sin usarse.

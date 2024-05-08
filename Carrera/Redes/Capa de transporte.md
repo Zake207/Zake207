@@ -33,7 +33,7 @@ Utiliza un número de secuencia en su cabecera para ordenar los ficheros y asegu
 
 El número de confirmaciones en TCP es el siguiente byte que espera recibir el receptor. El numero de secuencia es el numero del byte que se envía, es decir, si hacen envíos de 4 bytes los numeros de secuencia serán 0, 4, 8, ... Y los ACK serán 4, 8, 12
 
-Sigue el principio de confirmación acumulativa, esto es, una confirmación con un numero de aceptación X, confirma todos los anteriores.
+Puede seguir el principio de confirmación acumulativa, esto es, una confirmación con un numero de aceptación X, confirma todos los anteriores.
 
 Se utilizan temporizadores para detectar un paquete perdido y poder reenviarlo. El tiempo de espera varía dependiendo de a qué se está conectando. Este se establece midiendo el tiempo del envío del primer paquete y se va estimando a lo largo de la conexión. Es necesario que el receptor sea capaz de detectar duplicados para no ocasionar problemas cuando se pierdan paquetes.
 
@@ -61,9 +61,9 @@ Para evitar el síndrome de la ventana tonta se debe esperar hasta que haya sufi
 Cada emisor debe controlar su velocidad de transmisión en función de la congestión de la red.
 ==Pregunta de examen: Diferencias entre control de flujo y control de congestión==
 
-Se crea la ventana de congestión limitar la velocidad del emisor, esta varia en función de las transmisiones, en caso de pérdidas se baja la velocidad general, si todo va bien se aumenta.
+Se crea la ventana de congestión para limitar la velocidad del emisor, esta varia en función de las transmisiones, en caso de pérdidas se baja la velocidad general, si todo va bien se aumenta.
 
-Una pérdida se detecta si se produce el fin de un temporizador o se reciben 3 ACK duplicados del recptor.
+Una pérdida se detecta si se produce el fin de un temporizador o se reciben 3 ACK duplicados del receptor.
 Esto indica congestión.
 
 El control de congestión tiene tres algoritmos principales que derivan en diferentes tipos de TCP: Arranque lento (crece la ventana exponencialmente), evitación de congestión(crece la ventana de unidad en unidad) y la recuperación rápida (al detectar 3 ACK's duplicados reduce el umbral y la ventana a la mitad).

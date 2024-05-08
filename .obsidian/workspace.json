@@ -4,23 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "ce7c9addfdd4a349",
+        "id": "38b75eae9c00752f",
         "type": "tabs",
         "children": [
           {
-            "id": "851580250675f0b8",
+            "id": "9b592f06c22745e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Carrera/Redes/Introducción.md",
+                "file": "Carrera/Redes/Capa de red.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87ccfedfbf36690a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/Redes/Capa de transporte.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a3506d28464ec258",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/Redes/Sistemas distribuidos.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1cfb375d90a7e75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -95,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Carrera/Redes/Introducción.md",
+                "file": "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Carrera/Redes/Introducción.md",
+                "file": "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Carrera/Redes/Introducción.md"
+                "file": "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md"
               }
             }
           },
@@ -160,18 +200,26 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "851580250675f0b8",
+  "active": "b1cfb375d90a7e75",
   "lastOpenFiles": [
-    "Carrera/Redes/Redes.md",
+    "Carrera/AYEDA/AYEDA.md",
     "Recursos/Home.md",
+    "Carrera/Redes/Sistemas distribuidos.md",
+    "Carrera/Redes/Capa de transporte.md",
+    "Carrera/Redes/Capa de red.md",
+    "Carrera/Redes/Redes.md",
     "Carrera/Admin/Ejemplos.md",
-    "Carrera/Admin/FreeIPA.md",
     "Carrera/Admin/Administración de Sistemas.md",
+    "Carrera/Redes/Capa de enlace.md",
+    "Carrera/Redes/Capa Física.md",
+    "Carrera/Redes/Introducción.md",
+    "Carrera/Redes/Anexos/Pasted image 20240507212331.png",
+    "Carrera/Redes/Anexos/Pasted image 20240507211905.png",
+    "Recursos/Templates/Índice clases.md",
+    "Carrera/Admin/FreeIPA.md",
     "Carrera/Admin/Usuarios y permisos.md",
     "Carrera/Admin/Windows.md",
     "Carrera/Admin/Apuntes.md",
-    "Carrera/Redes/Sistemas distribuidos.md",
-    "Carrera/Redes/Capa de transporte.md",
     "Carrera/Redes/Anexos/Pasted image 20240505124419.png",
     "Carrera/Redes/Anexos/Pasted image 20240505124358.png",
     "Carrera/Redes/Anexos/Pasted image 20240505123645.png",
@@ -179,26 +227,17 @@
     "Carrera/Redes/Anexos/Pasted image 20240505115307.png",
     "Carrera/Redes/Anexos/Pasted image 20240505115038.png",
     "Recursos/Anexos/harry-gillen-t7gbHudO1Xo-unsplash.jpg",
-    "Carrera/Redes/Capa de red.md",
     "Carrera/Redes/Control de congestión.md",
     "Carrera/Redes/Protocolos de enrutamiento.md",
     "Carrera/Redes/Anexos/Pasted image 20240504191324.png",
-    "Carrera/Redes/Anexos/Pasted image 20240504183649.png",
-    "Carrera/Redes/Anexos/Pasted image 20240504183031.png",
     "Libros/Fulgrim.md",
-    "Carrera/Redes/Introducción.md",
-    "Carrera/Redes/Capa Física.md",
     "Carrera/Redes/Transmisión.md",
-    "Carrera/Redes/Capa de enlace.md",
     "Carrera/AYEDA/Repositorio.md",
     "Carrera/AYEDA/TEMA 1. C++.md",
-    "Carrera/AYEDA/AYEDA.md",
     "Carrera/AYEDA/TEMA 2. BÚSQUEDA.md",
     "Carrera/AYEDA/TEMA 3. ORDENACIÓN.md",
     "Carrera/CDyAL/Mapa Conceptual.md",
-    "Carrera/CDyAL/CDyAL.md",
     "Carrera/CDyAL/Mapa Conceptual. Tema 4.canvas",
-    "Carrera/Admin/Practica final.md",
     "Carrera/AYEDA/Sin título.canvas",
     "Tareas",
     "Carrera/CDyAL/Anexos",

@@ -57,7 +57,7 @@ Transporta los mensajes de la aplicación entre los diferentes puntos terminales
 Aglutina las funciones de la capa de sesión y presentación del modelo OSI.
 
 ### Procedimiento
-1. En la capa de aplicación se habla de un mensaje.
+1. En la capa de aplicación se crea el mensaje que desea enviar.
 2. La capa de transporte añade una cabecera que será usada por la capa de transporte del receptor. Ahora se habla de segmento.
 3. La capa de red añade una cabecera con información de direccionamiento a lo que ahora se denomina datagrama.
 4. La capa de enlace añade su propia información a lo que ahora trata como trama.

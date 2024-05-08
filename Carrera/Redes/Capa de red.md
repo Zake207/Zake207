@@ -14,13 +14,13 @@ La capa se encarga de garantizar la entrega, de manera ordenada y segura.
 # Conmutación
 El circuito virtual consta de varias partes las cuales permiten dos particiones de enlace:
 + Multiplexación por división en tiempo. Se asignan ranuras de tiempo fijas.
-+ Multiplexación por división en frecuencia. Se asignan bandas de secuencias a cada circuito.
++ Multiplexación por división en frecuencia. Se asignan bandas de frecuencias a cada circuito.
 
 1. Primero el emisor se comunica con la capa de red indicándole el destino, la capa determina la ruta y configura el circuito virtual.
 2. Se transmiten los datos.
 3. En caso de querer cortar comunicación se informa a la capa de red. Los routers mediante protocolos de señalización se envían mensajes de este tipo entre ellos para informar que el circuito ya no existe.
 
-Los routers no guardan información de estado. Usan la dirección de destino para dirigir la salida: Si hubiere una coincidencia se manda por la interfaz asociada, si hay coincidencias se manda por el más largo, si no hay ninguna se manda por una interfaz estándar. 
+Los routers no guardan información de estado. Usan la dirección de destino para dirigir la salida: Si hubiera una coincidencia se manda por la interfaz asociada, si hay coincidencias se manda por el más largo, si no hay ninguna se manda por una interfaz estándar. 
 
 Para compartir el medio se usa la multiplexación estadística en los paquetes.
 # Plano de control
@@ -70,7 +70,7 @@ Las subredes se codifican en la parte de red
 ![[Pasted image 20240504174519.png]]
 
 + VLSM: El host de cada subred se ajusta al tamaño de esta
-+ CIDR: Los bloques de las organizaciones pueden ser de diferentes clases (A, B, C). Solo tomaen cuenta la parte del host y de red.
++ CIDR: Los bloques de las organizaciones pueden ser de diferentes clases (A, B, C). Solo toma en cuenta la parte del host y de red.
 
 El tamaño del bloque debe ser potencia de dos, el bloque debe comenzar por una dirección múltiplo de su tamaño y no debe solaparse.
 # IPv6

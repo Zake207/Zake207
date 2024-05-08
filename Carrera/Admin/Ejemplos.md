@@ -44,8 +44,31 @@ Se le puede denegar el acceso a plankton
 DFS.
 
 Cuenta del servidor en dominio cc? se da por hecho
-Forzar? no porque el forzado no afectaría a las máquinas.
+Forzar? no porque el forzado no afectaría a las máquinas. Y bloquear
 Ejercicio?
+**TAMPOCO PUESTO QUE LA GPO DE EQUIPO SE APLICA AL ARRANCAR, ANTES DE QUE EL USER HAGA LOG-IN Y LUEGO SE APLICAN LAS DE USUARIO, EL BLOQUEO DE GPO DE USERS NO BLOQUEA A LAS DE EQUIPOS**
 ### Diseño físico
 SITES por cada uno un dns
 controladores de dominio
+Si el tráfico de replicación es mínimo se relaciona ¿como?
++ Sites Un conjunto de redes, no hay usuarios
++ Site-links
++ Servidores
+Si hubieran dos sedes que están muy cerca se debería crear un unico site para esas dos sedes????
+
+Se crean 3 sites debido 
+Los sites link se deben decir: el protocolo (IP/SMTP) el coste que nosotros le asignamos de manera lógica teniendo en cuenta los costes y las velocidades. Finalmente hay que decir cuándo y los intervalos de tiempo para que hagas las replicaciones estándar o continua.
+
+En cuanto a servidores:
+1 CD para cada dominio
+Tener los Catálogos globales
+y los DNS primarios y secundarios (para registros SRV, busca máquinas por servicio)
+
+Cada uno de estos necesitan 1 por dominio menos el catálogo global que requiero solo 1 por site.
+En caso de limitaciones  *el dominio tal se encuentra en nosedonde*
+se debe señir a estas condiciones *colocar el CD solo en nosedonde*
+
+En cc un servidor de CDCC/DNS/CG
+luego poner el servidor el cc.com (aquel que tiene la formula)
+ en Vegas Bajas poner un servidor que sea CDCC/DNS/CG y en Planktopolis un servidor que sea CDCDC/DNS/CG
+SOBRA UNO POR LO QUE LO COLOCAMOS DONDE SEA Y QUE TENGA SENTIDO
