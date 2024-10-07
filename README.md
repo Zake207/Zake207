@@ -2,11 +2,11 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=Zake207&icon=5&color=0)](https://visitcount.itsvg.in)
-# Hola Mundo! Soy ZakeDev
+# 										Hello World!👋 I'm Airam (ZakeDev)
+Im Airam Prieto González, student of the ULL.
+Currently learning Python, FastAPI, Tkinter, Figma, and general knowledgement about computing engineering.
 
-Soy Airam Prieto González, un joven programador y estudiante de la ULL, que esta tratando de abrirse paso en este inmenso e interesante mundo de la programación.
-Actualemente estoy cursando el grado de Ingeniería Informática.
-Me gusta aprender nuevas tecnologías y estoy especialmente interesado en el desarrollo de aplicaciones, fullstack y ciberseguridad.
+
 
 # 💻 Tech Stack:
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
