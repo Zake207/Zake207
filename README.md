@@ -14,10 +14,6 @@ Me gusta aprender nuevas tecnologías y estoy especialmente interesado en el des
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Zake207&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
-
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/airam-prieto-gonzález-959a35331/) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@ZakeDev) 
-
 ---
 [![](https://visitcount.itsvg.in/api?id=Zake207&icon=5&color=0)](https://visitcount.itsvg.in)
 
