@@ -1,5 +1,9 @@
-# Hola Mundo! Soy Airam
-Soy un joven programador, estudiante de la ULL, que esta tratando de abrirse paso en este inmenso e interesante mundo de la ingeniería informática.
+![image](https://github.com/user-attachments/assets/0c6cfcc3-2523-4d3e-83e5-b5e7af7956b4)
+# Hola Mundo! Soy ZakeDev
+
+Soy Airam Prieto González, un joven programador y estudiante de la ULL, que esta tratando de abrirse paso en este inmenso e interesante mundo de la programación.
+Actualemente estoy cursando el grado de Ingeniería Informática.
+Me gusta aprender nuevas tecnologías y estoy especialmente interesado en el desarrollo de aplicaciones, fullstack y ciberseguridad.
 
 # 💻 Tech Stack:
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
