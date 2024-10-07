@@ -1,4 +1,7 @@
 ![image](https://github.com/user-attachments/assets/0c6cfcc3-2523-4d3e-83e5-b5e7af7956b4)
+
+---
+[![](https://visitcount.itsvg.in/api?id=Zake207&icon=5&color=0)](https://visitcount.itsvg.in)
 # Hola Mundo! Soy ZakeDev
 
 Soy Airam Prieto González, un joven programador y estudiante de la ULL, que esta tratando de abrirse paso en este inmenso e interesante mundo de la programación.
@@ -14,8 +17,7 @@ Me gusta aprender nuevas tecnologías y estoy especialmente interesado en el des
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Zake207&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
----
-[![](https://visitcount.itsvg.in/api?id=Zake207&icon=5&color=0)](https://visitcount.itsvg.in)
+
 
 
 
